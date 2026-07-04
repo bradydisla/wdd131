@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 – Dynamic Web Fundamentals – Brady Disla</title>
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals course landing page for Brady Disla, con información personal, links del curso y recursos de desarrollo web.">
+  <meta name="author" content="Brady Disla">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/base.css">
+  <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+    <nav>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/brady-disla-17b8263b5" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://byupw.instructure.com/" target="_blank" rel="noopener">Canvas</a></li>
+        <li><a href="https://www.churchofjesuschrist.org/study/scriptures/nt/rom/8?lang=eng&id=p18#p18" target="_blank" rel="noopener">Favorite Scripture</a></li>
+        <li><a href="#" target="_blank" rel="noopener">Final Project</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Brady Disla</h1>
+
+    <div class="cards">
+      <section class="card">
+        <h2>About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>My name is Brady Disla. I'm from the Dominican Republic, and I'm currently a student in the WDD 131 course, learning the basics of web development. In my free time, I love reading and listening to music.</p>
+          </div>
+          <img src="images/profile-imagen.jpg" alt="Photo of Brady Disla" width="200" height="200" class="profile-photo" loading="lazy">
+        </div>
+        <hr>
+        <div class="country-info">
+          <div class="flag-block">
+            <img src="images/flag-rd.jpg" alt="Official flag of the Dominican Republic" width="150" height="100">
+            <span class="caption">Flag of the Dominican Republic</span>
+          </div>
+          <p>The Dominican Republic shares the island of Hispaniola with Haiti and is known for its beaches, merengue and bachata music, and rich Caribbean culture. It's a place I'm proud to call home.</p>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Web Dev Resources</h2>
+        <ul class="resource-list">
+          <li><a href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN Web Docs</a></li>
+          <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener">W3Schools</a></li>
+          <li><a href="https://css-tricks.com/" target="_blank" rel="noopener">CSS-Tricks</a></li>
+          <li><a href="https://www.smashingmagazine.com/" target="_blank" rel="noopener">Smashing Magazine</a></li>
+          <li><a href="https://dev.to/" target="_blank" rel="noopener">Dev.to Community</a></li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Brady Disla, Dominican Republic😎</p>
+    <p id="lastModified"></p>
+  </footer>
+
+</body>
+</html>
