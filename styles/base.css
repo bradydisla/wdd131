@@ -2,7 +2,6 @@
 * {
   box-sizing: border-box;
 }
-
 body {
   margin: 0;
   font-family: "Work Sans", Arial, sans-serif;
@@ -10,24 +9,21 @@ body {
   background-color: #ffffff;
   line-height: 1.6;
 }
-
 img {
   max-width: 100%;
   height: auto;
   display: block;
 }
-
-a {
-  color: #1a5fb4;
+a,
+a:visited {
+  color: #0D47A1;
 }
-
 /* ---------- Header ---------- */
 header {
-  background-color: #007562;
+  background-color: #004D40;
   color: #ffffff;
   padding: 1rem;
 }
-
 #course-title {
   display: block;
   text-align: center;
@@ -36,12 +32,10 @@ header {
   font-size: 1.3rem;
   letter-spacing: 0.02em;
 }
-
 /* ---------- Nav ---------- */
 nav {
   background-color: #2b2b2b;
 }
-
 nav ul {
   list-style: none;
   display: flex;
@@ -50,49 +44,44 @@ nav ul {
   margin: 0;
   padding: 0.9rem 1rem;
 }
-
-nav a {
+nav a,
+nav a:visited {
   text-decoration: none;
   color: #ffffff;
   font-weight: 500;
 }
-
 nav a:hover,
 nav a:focus {
   color: #f2c14e;
   outline: none;
 }
-
 /* ---------- Main ---------- */
 main {
   max-width: 950px;
   margin: 2rem auto;
   padding: 0 1rem;
 }
-
 main h1 {
   font-family: "Fraunces", Georgia, serif;
   font-size: 2.25rem;
   text-align: center;
   margin: 0 0 2rem;
+  color: #222;
 }
-
 /* Two cards side by side, like the example */
 .cards {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.5rem;
 }
-
 .card {
   border: 1px solid #ddd;
   border-radius: 6px;
   overflow: hidden;
   background-color: #ffffff;
 }
-
 .card h2 {
-  background-color: #007562;
+  background-color: #004D40;
   color: #ffffff;
   margin: 0;
   padding: 0.75rem 1rem;
@@ -100,12 +89,10 @@ main h1 {
   text-align: center;
   font-family: "Fraunces", Georgia, serif;
 }
-
 .card > *:not(h2) {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
 }
-
 /* About Me layout */
 .about-content {
   display: flex;
@@ -113,83 +100,71 @@ main h1 {
   align-items: flex-start;
   padding-top: 1.25rem;
 }
-
 .about-text {
   flex: 1;
 }
-
 .profile-photo {
   width: 130px;
   height: 130px;
   border-radius: 6px;
   object-fit: cover;
 }
-
 hr {
   border: none;
   border-top: 1px solid #ddd;
   margin: 1.25rem 1.25rem;
 }
-
 .country-info {
   display: flex;
   gap: 1.25rem;
   align-items: flex-start;
   padding-bottom: 1.25rem;
 }
-
 .flag-block {
   text-align: center;
   width: 150px;
 }
-
 .flag-block img {
   border: 1px solid #ccc;
 }
-
 .flag-block .caption {
   display: block;
   font-size: 0.8rem;
   font-style: italic;
   margin-top: 0.25rem;
+  color: #222;
 }
-
 .country-info p {
   flex: 1;
   margin: 0;
+  color: #222;
 }
-
 .resource-list {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
   margin: 0;
 }
-
 .resource-list li {
   margin-bottom: 0.5rem;
 }
-
 /* Side-by-side cards on wider screens, like the example */
 @media (min-width: 750px) {
   .cards {
     grid-template-columns: 1.3fr 1fr;
   }
 }
-
 /* ---------- Footer ---------- */
 footer {
-  background-color: #007562;
+  background-color: #004D40;
   color: #ffffff;
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
 }
-
 footer p {
   margin: 0.25rem 0;
 }
-
 footer #currentyear {
-  color: #f2c14e;
-  font-weight: 600;
+  color: #ffffff;
+  font-weight: 700;
 }
