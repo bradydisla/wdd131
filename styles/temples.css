@@ -1,0 +1,217 @@
+/* ============================
+   CUSTOM PROPERTIES / COLOR SCHEME
+   ============================ */
+:root {
+    --color-header-bg: #004D40;
+    --color-hover: #000000;
+    --color-text: #222222;
+    --color-caption: #333333;
+    --color-card-bg: #f9f9f9;
+    --color-card-border: #dddddd;
+    --color-page-bg: #dddddd;
+
+    --font-display: "Fraunces", Georgia, serif;
+    --font-body: "Mulish", sans-serif;
+}
+
+/* ============================
+   RESET / BASE
+   ============================ */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: var(--color-page-bg);
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--color-text);
+    background-color: var(--color-page-bg);
+    line-height: 1.5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+}
+
+/* ============================
+   HEADER
+   ============================ */
+header {
+    background-color: var(--color-header-bg);
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: 1.6rem;
+}
+
+/* Hamburger button - visible only on mobile */
+#menu {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 48px;
+    height: 48px;
+}
+
+#menu .line {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 2px;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+/* Animate the three lines into an X when the button has .show */
+#menu.show .line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+#menu.show .line:nth-child(2) {
+    opacity: 0;
+}
+
+#menu.show .line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Nav hidden by default on mobile, toggled via JS adding/removing .show */
+.navigation {
+    display: none;
+    background-color: var(--color-header-bg);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.navigation.show {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0.5rem 0;
+}
+
+nav a,
+nav a:visited {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #ffffff;
+    background-color: var(--color-hover);
+    outline: none;
+}
+
+/* ============================
+   MAIN
+   ============================ */
+main {
+    max-width: 950px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+main h1 {
+    grid-column: 1 / -1;
+    font-family: var(--font-display);
+    font-size: 2.25rem;
+    text-align: center;
+    margin: 0 0 1rem;
+    color: #222;
+}
+
+.temple-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    grid-column: 1 / -1;
+}
+
+figure {
+    margin: 0;
+    background-color: var(--color-card-bg);
+    padding: 10px;
+    border: 1px solid var(--color-card-border);
+    border-radius: 8px;
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+figcaption {
+    margin-top: 8px;
+    font-weight: bold;
+    color: var(--color-caption);
+}
+
+/* ============================
+   FOOTER
+   ============================ */
+footer {
+    background-color: var(--color-header-bg);
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.25rem 0;
+}
+
+footer #currentyear {
+    color: #ffffff;
+    font-weight: 700;
+}
