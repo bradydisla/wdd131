@@ -37,10 +37,6 @@ body {
     flex-direction: column;
 }
 
-main {
-    flex: 1;
-}
-
 img {
     max-width: 100%;
     display: block;
@@ -63,10 +59,11 @@ header {
     position: relative;
 }
 
-header h1 {
+header .site-title {
     margin: 0;
     font-family: var(--font-display);
     font-size: 1.6rem;
+    font-weight: 700;
 }
 
 /* Hamburger button - visible only on mobile */
@@ -156,6 +153,7 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
+    flex: 1;
 }
 
 main h1 {
