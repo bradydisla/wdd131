@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dominican Republic | Place Page</title>
+  <meta name="description" content="An introduction to the Dominican Republic — its coast, culture, quick facts, and current weather in Santo Domingo." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Work+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles/place.css" />
+  <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <p class="brand">República Dominicana</p>
+
+      <nav aria-label="Page sections">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#weather">Weather</a></li>
+          <li><a href="#facts">Quick Facts</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+
+    <picture>
+      <source media="(min-width: 900px)" srcset="images/domicanr-large.webp" />
+      <source media="(min-width: 600px)" srcset="images/domicanr-medium.webp" />
+      <img
+        src="images/domicanr-small.webp"
+        alt="Turquoise Caribbean coastline of the Dominican Republic lined with palm trees"
+        class="hero-img"
+        width="1200"
+        height="675"
+      />
+    </picture>
+
+    <div class="hero-overlay">
+      <h1>Dominican Republic</h1>
+      <p class="hero-tagline">Where the Caribbean meets the Cordillera</p>
+    </div>
+
+    <svg class="wave-divider" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,32 C240,80 480,0 720,24 C960,48 1200,88 1440,40 L1440,80 L0,80 Z"></path>
+    </svg>
+
+  </section>
+
+  <main class="wrap">
+
+    <section id="about" class="about">
+      <h2>Island Life</h2>
+
+      <p>
+        The Dominican Republic shares the island of Hispaniola with Haiti and is the most visited destination in the Caribbean. Beyond its beaches, the country is home to colonial-era Santo Domingo, the merengue and bachata that fill its streets, and mountain towns tucked into the Cordillera Central.
+      </p>
+
+      <p>
+        Two stones found almost nowhere else on Earth capture the country's character: <strong>larimar</strong>, a blue-green volcanic stone mined only in the southwest, and <strong>amber</strong>, golden fossilized resin pulled from the northern hills. Their colors run through this page.
+      </p>
+    </section>
+
+    <section class="info-grid">
+
+      <section class="data-card">
+        <h2>Data</h2>
+
+        <ul class="data-list">
+          <li><strong>Area:</strong> 48,671 km²</li>
+          <li><strong>Population:</strong> 11.4 Million</li>
+          <li><strong>Capital:</strong> Santo Domingo</li>
+          <li><strong>Languages:</strong> Spanish</li>
+          <li><strong>Currency:</strong> Dominican Peso (DOP)</li>
+          <li><strong>Time Zone:</strong> UTC−4</li>
+          <li><strong>Calling Code:</strong> +1</li>
+          <li><strong>Internet TLD:</strong> .do</li>
+        </ul>
+      </section>
+
+      <section id="weather" class="weather">
+
+        <h2>Weather</h2>
+
+        <img
+          class="weather-icon-mobile"
+          src="images/weather-icon.svg"
+          alt="Partly cloudy skies"
+          width="48"
+          height="48"
+        />
+
+        <div class="weather-card">
+
+          <p class="weather-location">Santo Domingo</p>
+
+          <dl class="weather-stats">
+
+            <div class="stat">
+              <dt>Temperature</dt>
+              <dd><span id="temperature">27</span>°C</dd>
+            </div>
+
+            <div class="stat">
+              <dt>Wind Speed</dt>
+              <dd><span id="wind-speed">15</span> km/h</dd>
+            </div>
+
+            <div class="stat">
+              <dt>Wind Chill</dt>
+              <dd><span id="wind-chill">--</span></dd>
+            </div>
+
+          </dl>
+
+          <p class="weather-note">
+            Warm, humid, and breezy year-round — true wind chill rarely applies at sea level here.
+          </p>
+
+        </div>
+
+      </section>
+
+    </section>
+
+    <section id="facts" class="facts">
+
+      <h2>Quick Facts</h2>
+
+      <div class="fact-grid">
+
+        <article class="fact-card">
+          <p class="fact-label">Capital</p>
+          <p class="fact-value">Santo Domingo</p>
+        </article>
+
+        <article class="fact-card">
+          <p class="fact-label">Language</p>
+          <p class="fact-value">Spanish</p>
+        </article>
+
+        <article class="fact-card">
+          <p class="fact-label">Currency</p>
+          <p class="fact-value">Dominican Peso (DOP)</p>
+        </article>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© <span id="year"></span>🐳Brady Disla🐳 Dominican Republic</p>
+      <p>Last Modified: <span id="last-modified"></span></p>
+    </div>
+  </footer>
+
+</body>
+</html>
