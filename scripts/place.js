@@ -9,7 +9,7 @@ document.getElementById("last-modified").textContent =
   document.lastModified;
 
 // ======================================
-// Weather - Wind Chill Calculation
+// Weather - Wind Chill Calculation.
 // ======================================
 
 const temperature = 27; // °C
