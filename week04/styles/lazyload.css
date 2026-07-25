@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,500;0,600;1,400&family=Inter:wght@400;500&display=swap");
+
+:root {
+  --ink: #1c1a17;
+  --paper: #f2ede4;
+  --moss: #4b5d43;
+  --clay: #a8623f;
+  --line: #d8cfc0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--ink);
+  color: var(--paper);
+  font-family: "Inter", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1rem 2rem;
+}
+
+h1 {
+  font-family: "Newsreader", serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  color: var(--paper);
+  text-align: center;
+  max-width: 30ch;
+  margin: 0 0 2.5rem;
+  letter-spacing: 0.01em;
+}
+
+img {
+  display: block;
+  width: 400px;
+  height: 650px;
+  max-width: 90vw;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  margin-bottom: 2.5rem;
+  opacity: 0;
+}
+
+img.loaded {
+  animation-name: fadeFromBlack;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeFromBlack {
+  from {
+    opacity: 0;
+    filter: brightness(0%);
+  }
+  to {
+    opacity: 1;
+    filter: brightness(100%);
+  }
+}
+
+footer {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--line);
+  border-top: 1px solid var(--line);
+  padding: 1.25rem 1rem 2rem;
+}
+
+footer p {
+  margin: 0.25rem 0;
+}
