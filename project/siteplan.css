@@ -139,6 +139,11 @@ a{ color:var(--copper); }
   color:var(--parchment);
   box-shadow:0 6px 16px rgba(0,0,0,0.1);
 }
+.swatch-verdigris{ background:#22403A; }
+.swatch-brass{ background:#C9A227; }
+.swatch-parchment{ background:#F3ECDC; }
+.swatch-ink{ background:#211E19; }
+.swatch-copper{ background:#AE5F2E; }
 .swatch .hex{ font-family:'IBM Plex Mono', monospace; font-size:0.85rem; font-weight:600; }
 .swatch .hex.dark, .swatch .swatch-name.dark, .swatch .swatch-use.dark{ color:var(--ink); }
 .swatch .swatch-name{ font-weight:600; }
