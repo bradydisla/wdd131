@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Plan: CoinBest</title>
+  <meta name="description" content="Website planning document for the CoinBest coin collecting and coin shop project.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <p class="eyebrow">WDD 131 &middot; Project Planning</p>
+    <h1>Website Plan</h1>
+    <p class="subtitle">CoinBest — Learn, Collect &amp; Trade Coins</p>
+  </header>
+
+  <main>
+
+    <!-- SITE NAME -->
+    <section id="site-name">
+      <h2><span class="num">01</span> Site Name</h2>
+      <p class="big-name">CoinBest</p>
+      <p>The name combines <strong>coin</strong> with <strong>best</strong>, signaling two things at once: this is a place to find the best coins available, and the best place to learn about the hobby. It's short, easy to say out loud, and works equally well for a learning resource and a storefront — which matches the site's dual role.</p>
+      <p class="domain">Optional domain availability: <span class="mono">coinbest.com</span></p>
+    </section>
+
+    <!-- SITE PURPOSE -->
+    <section id="site-purpose">
+      <h2><span class="num">02</span> Site Purpose</h2>
+      <p>CoinBest has a dual purpose: it is a place to <strong>learn about and share</strong> the coin collecting hobby, and a functional e-commerce hub to <strong>buy, sell, and trade</strong> historical coins. Alongside a browsable product catalog with condition grading and pricing, and a dedicated intake form for selling coins, the site offers educational content — grading guides, coin history, and collecting tips — so newcomers can understand the hobby before they buy or sell anything.</p>
+    </section>
+
+    <!-- SCENARIOS -->
+    <section id="scenarios">
+      <h2><span class="num">03</span> Scenarios</h2>
+      <p>Scenarios represent questions a target visitor — a collector, a newcomer to the hobby, or someone who inherited coins — might bring to the site.</p>
+      <ul class="scenario-list">
+        <li>"I'm new to coin collecting. Where do I even start, and what should I learn first?"</li>
+        <li>"I have a box of old coins from my grandfather. How do I find out what they're worth and sell them?"</li>
+        <li>"I collect U.S. Morgan dollars. What condition is this one in, and how much does it cost?"</li>
+        <li>"What do grading codes like MS-65 or VF-30 actually mean?"</li>
+      </ul>
+    </section>
+
+    <!-- COLOR SCHEMA -->
+    <section id="color-schema">
+      <h2><span class="num">04</span> Color Schema</h2>
+      <p>The palette is drawn from the coin shop's own materials — oxidized copper and bronze, brass detailing, and aged ledger paper — instead of a generic storefront look.</p>
+      <div class="swatch-grid">
+        <div class="swatch" style="background:#22403A;">
+          <span class="hex">#22403A</span>
+          <span class="swatch-name">Verdigris Deep</span>
+          <span class="swatch-use">Header, hero &amp; footer backgrounds</span>
+        </div>
+        <div class="swatch" style="background:#C9A227;">
+          <span class="hex dark">#C9A227</span>
+          <span class="swatch-name dark">Brass</span>
+          <span class="swatch-use dark">Buttons, accents, active states</span>
+        </div>
+        <div class="swatch" style="background:#F3ECDC;">
+          <span class="hex dark">#F3ECDC</span>
+          <span class="swatch-name dark">Parchment</span>
+          <span class="swatch-use dark">Page background, product cards</span>
+        </div>
+        <div class="swatch" style="background:#211E19;">
+          <span class="hex">#211E19</span>
+          <span class="swatch-name">Ink</span>
+          <span class="swatch-use">Body text</span>
+        </div>
+        <div class="swatch" style="background:#AE5F2E;">
+          <span class="hex">#AE5F2E</span>
+          <span class="swatch-name">Copper</span>
+          <span class="swatch-use">Eyebrow labels, links, secondary accent</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- TYPOGRAPHY -->
+    <section id="typography">
+      <h2><span class="num">05</span> Typography</h2>
+      <p>Three typefaces cover three distinct jobs: a characterful display serif for headings, a readable serif for body copy, and a monospace face for prices, grades, and labels — mimicking a certification tag.</p>
+      <div class="type-samples">
+        <div class="type-sample">
+          <p class="type-label">Fraunces — Headings &amp; logotype</p>
+          <p class="type-demo font-display">Every coin carries two stories</p>
+        </div>
+        <div class="type-sample">
+          <p class="type-label">Source Serif 4 — Body copy</p>
+          <p class="type-demo font-body">Every listing is independently graded, with condition and provenance noted before it's offered for sale.</p>
+        </div>
+        <div class="type-sample">
+          <p class="type-label">IBM Plex Mono — Labels, prices &amp; grades</p>
+          <p class="type-demo font-mono">CERT SS-1042-07 &nbsp; MS-65 &nbsp; $185.00</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- WIREFRAMES -->
+    <section id="wireframes">
+      <h2><span class="num">06</span> Wireframes — Home Page</h2>
+      <p>Rough block layouts for the home page in mobile and desktop views. Wireframes represent placement only, not final content or styling.</p>
+
+      <div class="wireframes-grid">
+        <figure class="wireframe mobile">
+          <figcaption>Mobile</figcaption>
+          <div class="wf-box wf-ticker">Spot price ticker</div>
+          <div class="wf-box wf-nav">Logo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ☰ Menu / Cart</div>
+          <div class="wf-box wf-hero">Hero headline + CTA buttons<br><span class="wf-sub">(coin graphic stacks below)</span></div>
+          <div class="wf-box wf-arrivals">New arrivals<br><span class="wf-sub">1 card per row</span></div>
+          <div class="wf-box wf-catalog">Catalog preview<br><span class="wf-sub">filters stack above grid</span></div>
+          <div class="wf-box wf-sell">Sell your coins — form</div>
+          <div class="wf-box wf-footer">Footer</div>
+        </figure>
+
+        <figure class="wireframe desktop">
+          <figcaption>Desktop</figcaption>
+          <div class="wf-box wf-ticker">Spot price ticker</div>
+          <div class="wf-box wf-nav">Logo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Home &nbsp; Buy &nbsp; Sell &nbsp; About &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cart</div>
+          <div class="wf-row">
+            <div class="wf-box wf-hero-text">Hero headline + CTA buttons</div>
+            <div class="wf-box wf-hero-coin">Coin graphic</div>
+          </div>
+          <div class="wf-box wf-arrivals">
+            New arrivals
+            <div class="wf-row three">
+              <div class="wf-card">card</div><div class="wf-card">card</div><div class="wf-card">card</div>
+            </div>
+          </div>
+          <div class="wf-box wf-catalog">
+            Catalog — filters row, then grid
+            <div class="wf-row four">
+              <div class="wf-card">card</div><div class="wf-card">card</div><div class="wf-card">card</div><div class="wf-card">card</div>
+            </div>
+          </div>
+          <div class="wf-box wf-sell">Sell your coins — form (centered, max width)</div>
+          <div class="wf-box wf-footer">Footer</div>
+        </figure>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Site plan prepared for WDD 131 &middot; Project: CoinBest coin collecting &amp; coin shop.</p>
+  </footer>
+
+</body>
+</html>
