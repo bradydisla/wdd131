@@ -29,3 +29,11 @@ function populateProductOptions() {
 }
 
 document.addEventListener("DOMContentLoaded", populateProductOptions);
+
+/* Fills in the footer's "Last Modification" date on every page
+   that includes this script, using the file's own last-modified
+   header instead of an inline script block. */
+document.addEventListener("DOMContentLoaded", () => {
+  const lastModifiedEl = document.getElementById("last-modified");
+  if (lastModifiedEl) lastModifiedEl.textContent = document.lastModified;
+});

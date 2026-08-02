@@ -3,8 +3,8 @@
    Palette:
      --ink        #1F2937  (body text)
      --muted      #6B7280  (secondary text)
-     --teal       #1F4B43  (primary / header)
-     --teal-dark  #163530  (hover / shadows)
+     --pine       #1F4B43  (primary / header)
+     --pine-dark  #163530  (hover / shadows)
      --amber      #E1993B  (accent / stars / focus)
      --paper      #FAF7F2  (page background)
      --card       #FFFFFF  (form card)
@@ -14,13 +14,14 @@
      Body:    "Inter" (labels, inputs, copy)
    ========================================================= */
 
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap');
+/* Fonts are loaded via <link> tags in the HTML <head>, not @import
+   (avoids render-blocking and lets us use preconnect + Best Practices checks). */
 
 :root {
   --ink: #1F2937;
   --muted: #454E5A;
-  --teal: #1F4B43;
-  --teal-dark: #163530;
+  --pine: #1F4B43;
+  --pine-dark: #163530;
   --amber: #9C5817;
   --amber-dark: #6E3F10;
   --paper: #FAF7F2;
@@ -50,7 +51,7 @@ body {
 }
 
 a {
-  color: var(--teal);
+  color: var(--pine);
 }
 
 .page-wrap {
@@ -58,11 +59,15 @@ a {
   width: 100%;
   max-width: 640px;
   margin: 0 auto;
-  padding: 2rem 1.25rem 3rem;
+  padding: 0.5rem 1.25rem 3rem;
 }
 
 /* ---------- Masthead ---------- */
 .masthead {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 0;
   text-align: center;
   margin-bottom: 1.5rem;
 }
@@ -82,7 +87,7 @@ a {
   font-weight: 600;
   font-size: clamp(1.75rem, 5vw, 2.35rem);
   margin: 0;
-  color: var(--teal);
+  color: var(--pine);
 }
 
 .masthead p {
@@ -101,7 +106,7 @@ a {
 }
 
 .review-card__band {
-  background: linear-gradient(135deg, var(--teal) 0%, var(--teal-dark) 100%);
+  background: linear-gradient(135deg, var(--pine) 0%, var(--pine-dark) 100%);
   color: #fff;
   padding: 1.1rem 1.5rem;
 }
@@ -286,7 +291,7 @@ textarea {
 .checkbox-item input[type="checkbox"] {
   width: 1.05rem;
   height: 1.05rem;
-  accent-color: var(--teal);
+  accent-color: var(--pine);
   flex-shrink: 0;
 }
 
@@ -303,7 +308,7 @@ textarea {
 input[type="submit"] {
   display: block;
   width: 100%;
-  background: var(--teal);
+  background: var(--pine);
   color: #fff;
   font: inherit;
   font-weight: 600;
@@ -317,7 +322,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background: var(--teal-dark);
+  background: var(--pine-dark);
 }
 
 input[type="submit"]:active {
@@ -338,7 +343,7 @@ input[type="submit"]:active {
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  background: var(--teal);
+  background: var(--pine);
   color: #fff;
   display: flex;
   align-items: center;
@@ -347,10 +352,10 @@ input[type="submit"]:active {
   margin: 0 auto 1rem;
 }
 
-.confirm-card h1 {
+.confirm-card h2 {
   font-family: 'Fraunces', Georgia, serif;
   font-size: 1.5rem;
-  color: var(--teal);
+  color: var(--pine);
   margin: 0 0 0.4rem;
 }
 
@@ -419,14 +424,14 @@ input[type="submit"]:active {
   margin-top: 1.75rem;
   font-weight: 600;
   font-size: 0.92rem;
-  color: var(--teal);
+  color: var(--pine);
   text-decoration: none;
   border-bottom: 1.5px solid var(--amber);
   padding-bottom: 1px;
 }
 
 .back-link:hover {
-  color: var(--teal-dark);
+  color: var(--pine-dark);
 }
 
 /* ---------- Footer ---------- */

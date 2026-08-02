@@ -6,18 +6,21 @@
   <title>Product Review Form</title>
   <meta name="description" content="Share your experience with a recent purchase using this product review form.">
   <meta name="author" content="Brady Disla">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap">
   <link rel="stylesheet" href="styles/form.css">
   <script src="scripts/products.js" defer></script>
 </head>
 <body>
 
-  <main class="page-wrap">
-    <div class="masthead">
-      <span class="eyebrow">We'd love your feedback</span>
-      <h1>Product Review</h1>
-      <p>Tell us how a recent purchase worked out for you.</p>
-    </div>
+  <header class="masthead">
+    <span class="eyebrow">We'd love your feedback</span>
+    <h1>Product Review</h1>
+    <p>Tell us how a recent purchase worked out for you.</p>
+  </header>
 
+  <main class="page-wrap">
     <section class="review-card">
       <div class="review-card__band">
         <h2>Review Details</h2>
@@ -43,16 +46,16 @@
             <input type="radio" id="rating-5" name="rating" value="5" required>
             <label for="rating-5" title="5 stars">&star;</label>
 
-            <input type="radio" id="rating-4" name="rating" value="4">
+            <input type="radio" id="rating-4" name="rating" value="4" required>
             <label for="rating-4" title="4 stars">&star;</label>
 
-            <input type="radio" id="rating-3" name="rating" value="3">
+            <input type="radio" id="rating-3" name="rating" value="3" required>
             <label for="rating-3" title="3 stars">&star;</label>
 
-            <input type="radio" id="rating-2" name="rating" value="2">
+            <input type="radio" id="rating-2" name="rating" value="2" required>
             <label for="rating-2" title="2 stars">&star;</label>
 
-            <input type="radio" id="rating-1" name="rating" value="1">
+            <input type="radio" id="rating-1" name="rating" value="1" required>
             <label for="rating-1" title="1 star">&star;</label>
           </div>
           <p class="rating-caption">Click a star to rate this product from 1 (poor) to 5 (excellent).</p>
@@ -97,7 +100,7 @@
         <!-- User Name -->
         <div class="field">
           <label for="username">Your Name <span class="optional-tag">(Optional)</span></label>
-          <input type="text" id="username" name="username" placeholder="e.g. Brady Disla" autocomplete="name">
+          <input type="text" id="username" name="username" placeholder="e.g. Jordan Ramirez" autocomplete="name">
         </div>
 
         <div class="submit-row">
@@ -112,9 +115,5 @@
     <p>&copy; 2026 😎Brady Disla😎 &middot; WDD131</p>
     <p>Last Modification: <span id="last-modified"></span></p>
   </footer>
-
-  <script>
-    document.getElementById("last-modified").textContent = document.lastModified;
-  </script>
 </body>
 </html>
