@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Submitted &mdash; Product Review Form</title>
+  <meta name="description" content="Confirmation page shown after submitting a product review.">
+  <link rel="stylesheet" href="styles/form.css">
+  <meta name="author" content="Brady Disla">
+  <script src="scripts/products.js" defer></script>
+  <script src="scripts/review.js" defer></script>
+</head>
+<body>
+
+  <main class="page-wrap">
+    <div class="masthead">
+      <span class="eyebrow">Thank you</span>
+      <h1>Review Received</h1>
+    </div>
+
+    <section class="confirm-card">
+      <div class="confirm-badge" aria-hidden="true">&check;</div>
+      <h1 id="confirm-heading">Thanks for your review!</h1>
+      <p class="lede" id="confirm-lede">Your feedback helps other shoppers make better decisions.</p>
+
+      <div class="counter-pill">
+        <span class="num" id="review-count">0</span>
+        <span class="label">reviews submitted<br>on this device</span>
+      </div>
+
+      <dl class="summary-table" id="summary-list" aria-label="Review summary">
+        <!-- Populated dynamically by js/review.js -->
+      </dl>
+
+      <a class="back-link" href="form.html">&larr; Submit another review</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 😎Brady Disla😎 &middot; WDD131</p>
+    <p>Last Modification: <span id="last-modified"></span></p>
+  </footer>
+
+  <script>
+    document.getElementById("last-modified").textContent = document.lastModified;
+  </script>
+</body>
+</html>

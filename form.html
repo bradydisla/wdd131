@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Review Form</title>
+  <meta name="description" content="Share your experience with a recent purchase using this product review form.">
+  <meta name="author" content="Brady Disla">
+  <link rel="stylesheet" href="styles/form.css">
+  <script src="scripts/products.js" defer></script>
+</head>
+<body>
+
+  <main class="page-wrap">
+    <div class="masthead">
+      <span class="eyebrow">We'd love your feedback</span>
+      <h1>Product Review</h1>
+      <p>Tell us how a recent purchase worked out for you.</p>
+    </div>
+
+    <section class="review-card">
+      <div class="review-card__band">
+        <h2>Review Details</h2>
+      </div>
+
+      <form action="review.html" method="get">
+
+        <p class="required-note"><span class="mark">*</span> indicates a required field</p>
+
+        <!-- Product Name -->
+        <div class="field is-required">
+          <label for="product">Product Name</label>
+          <select id="product" name="product" required>
+            <option value="" disabled selected>Select a Product ...</option>
+            <!-- Remaining options are generated dynamically by js/products.js -->
+          </select>
+        </div>
+
+        <!-- Overall Rating -->
+        <div class="field is-required">
+          <span class="field-legend" id="rating-legend">Overall Rating</span>
+          <div class="star-rating" role="radiogroup" aria-labelledby="rating-legend">
+            <input type="radio" id="rating-5" name="rating" value="5" required>
+            <label for="rating-5" title="5 stars">&star;</label>
+
+            <input type="radio" id="rating-4" name="rating" value="4">
+            <label for="rating-4" title="4 stars">&star;</label>
+
+            <input type="radio" id="rating-3" name="rating" value="3">
+            <label for="rating-3" title="3 stars">&star;</label>
+
+            <input type="radio" id="rating-2" name="rating" value="2">
+            <label for="rating-2" title="2 stars">&star;</label>
+
+            <input type="radio" id="rating-1" name="rating" value="1">
+            <label for="rating-1" title="1 star">&star;</label>
+          </div>
+          <p class="rating-caption">Click a star to rate this product from 1 (poor) to 5 (excellent).</p>
+        </div>
+
+        <!-- Date of Installation -->
+        <div class="field is-required">
+          <label for="installDate">Date of Installation</label>
+          <input type="date" id="installDate" name="installDate" required>
+        </div>
+
+        <!-- Useful Features -->
+        <div class="field">
+          <span class="field-legend">Which features did you find useful in the product?</span>
+          <p class="field-hint">Check all that apply.</p>
+          <div class="checkbox-grid" role="group" aria-label="Useful features">
+            <div class="checkbox-item">
+              <input type="checkbox" id="feature-durability" name="features" value="Durability">
+              <label for="feature-durability">Durability</label>
+            </div>
+            <div class="checkbox-item">
+              <input type="checkbox" id="feature-ease" name="features" value="Ease of Use">
+              <label for="feature-ease">Ease of Use</label>
+            </div>
+            <div class="checkbox-item">
+              <input type="checkbox" id="feature-performance" name="features" value="Performance">
+              <label for="feature-performance">Performance</label>
+            </div>
+            <div class="checkbox-item">
+              <input type="checkbox" id="feature-design" name="features" value="Design">
+              <label for="feature-design">Design</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Written Review -->
+        <div class="field">
+          <label for="review">Written Review <span class="optional-tag">(Optional)</span></label>
+          <textarea id="review" name="review" placeholder="What stood out about this product? What would you tell a friend considering it?"></textarea>
+        </div>
+
+        <!-- User Name -->
+        <div class="field">
+          <label for="username">Your Name <span class="optional-tag">(Optional)</span></label>
+          <input type="text" id="username" name="username" placeholder="e.g. Brady Disla" autocomplete="name">
+        </div>
+
+        <div class="submit-row">
+          <input type="submit" value="Post Review">
+        </div>
+
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 😎Brady Disla😎 &middot; WDD131</p>
+    <p>Last Modification: <span id="last-modified"></span></p>
+  </footer>
+
+  <script>
+    document.getElementById("last-modified").textContent = document.lastModified;
+  </script>
+</body>
+</html>

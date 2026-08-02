@@ -1,0 +1,463 @@
+/* =========================================================
+   W05 Product Review Form — Stylesheet
+   Palette:
+     --ink        #1F2937  (body text)
+     --muted      #6B7280  (secondary text)
+     --teal       #1F4B43  (primary / header)
+     --teal-dark  #163530  (hover / shadows)
+     --amber      #E1993B  (accent / stars / focus)
+     --paper      #FAF7F2  (page background)
+     --card       #FFFFFF  (form card)
+     --line       #E4DED2  (hairline borders)
+   Type:
+     Display: "Fraunces" (headings)
+     Body:    "Inter" (labels, inputs, copy)
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --ink: #1F2937;
+  --muted: #454E5A;
+  --teal: #1F4B43;
+  --teal-dark: #163530;
+  --amber: #9C5817;
+  --amber-dark: #6E3F10;
+  --paper: #FAF7F2;
+  --card: #FFFFFF;
+  --line: #E4DED2;
+  --error: #B3261E;
+  --radius: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: var(--teal);
+}
+
+.page-wrap {
+  flex: 1;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3rem;
+}
+
+/* ---------- Masthead ---------- */
+.masthead {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.masthead .eyebrow {
+  display: inline-block;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--amber-dark);
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+.masthead h1 {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 600;
+  font-size: clamp(1.75rem, 5vw, 2.35rem);
+  margin: 0;
+  color: var(--teal);
+}
+
+.masthead p {
+  color: var(--muted);
+  margin: 0.4rem 0 0;
+  font-size: 0.95rem;
+}
+
+/* ---------- Card / Form ---------- */
+.review-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  box-shadow: 0 1px 2px rgba(31, 41, 55, 0.04), 0 12px 28px -18px rgba(22, 53, 48, 0.35);
+  overflow: hidden;
+}
+
+.review-card__band {
+  background: linear-gradient(135deg, var(--teal) 0%, var(--teal-dark) 100%);
+  color: #fff;
+  padding: 1.1rem 1.5rem;
+}
+
+.review-card__band h2 {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 600;
+  font-size: 1.15rem;
+  margin: 0;
+  letter-spacing: 0.01em;
+}
+
+form {
+  padding: 1.5rem 1.5rem 1.75rem;
+}
+
+.field {
+  margin-bottom: 1.5rem;
+}
+
+.field:last-of-type {
+  margin-bottom: 0;
+}
+
+.field > label,
+.field > .field-legend {
+  display: block;
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: var(--ink);
+  margin-bottom: 0.45rem;
+}
+
+.optional-tag {
+  font-weight: 500;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.field-hint {
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin: -0.15rem 0 0.5rem;
+}
+
+/* Text-ish inputs */
+select,
+input[type="date"],
+input[type="text"],
+textarea {
+  width: 100%;
+  font: inherit;
+  font-size: 0.98rem;
+  color: var(--ink);
+  background: var(--paper);
+  border: 1.5px solid var(--line);
+  border-radius: 8px;
+  padding: 0.65rem 0.8rem;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+select:hover,
+input[type="date"]:hover,
+input[type="text"]:hover,
+textarea:hover {
+  border-color: #C9BFA8;
+}
+
+select:focus-visible,
+input[type="date"]:focus-visible,
+input[type="text"]:focus-visible,
+textarea:focus-visible,
+input[type="checkbox"]:focus-visible + label,
+.star-rating label:focus-visible {
+  outline: 3px solid var(--amber);
+  outline-offset: 2px;
+  border-color: var(--amber-dark);
+}
+
+select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='%236B7280' d='M5.5 7.5l4.5 4.5 4.5-4.5' stroke='%236B7280' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 1rem;
+  padding-right: 2.2rem;
+}
+
+textarea {
+  min-height: 110px;
+  resize: vertical;
+  font-family: inherit;
+}
+
+::placeholder {
+  color: var(--muted);
+  opacity: 1;
+}
+
+/* Required indicator */
+.field.is-required > label::after,
+.field.is-required > .field-legend::after {
+  content: " *";
+  color: var(--amber-dark);
+}
+
+.required-note {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin: 0.25rem 0 1.5rem;
+}
+
+.required-note .mark {
+  color: var(--amber-dark);
+  font-weight: 700;
+}
+
+/* ---------- Star rating ---------- */
+.star-rating {
+  display: inline-flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  gap: 0.15rem;
+}
+
+.star-rating input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.star-rating label {
+  cursor: pointer;
+  font-size: 2rem;
+  line-height: 1;
+  color: #6E6754;
+  padding: 0.1rem 0.12rem;
+  border-radius: 6px;
+  transition: color 0.12s ease, transform 0.12s ease;
+  user-select: none;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label,
+.star-rating input:checked ~ label {
+  color: var(--amber);
+}
+
+.star-rating label:active {
+  transform: scale(1.12);
+}
+
+.rating-caption {
+  margin-top: 0.4rem;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+/* ---------- Checkboxes ---------- */
+.checkbox-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem 0.75rem;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  background: var(--paper);
+  border: 1.5px solid var(--line);
+  border-radius: 8px;
+  padding: 0.55rem 0.7rem;
+}
+
+.checkbox-item input[type="checkbox"] {
+  width: 1.05rem;
+  height: 1.05rem;
+  accent-color: var(--teal);
+  flex-shrink: 0;
+}
+
+.checkbox-item label {
+  font-size: 0.92rem;
+  cursor: pointer;
+}
+
+/* ---------- Submit ---------- */
+.submit-row {
+  margin-top: 1.85rem;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 100%;
+  background: var(--teal);
+  color: #fff;
+  font: inherit;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.01em;
+  border: none;
+  border-radius: 8px;
+  padding: 0.85rem 1rem;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.1s ease;
+}
+
+input[type="submit"]:hover {
+  background: var(--teal-dark);
+}
+
+input[type="submit"]:active {
+  transform: translateY(1px);
+}
+
+/* ---------- Confirmation page ---------- */
+.confirm-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  box-shadow: 0 1px 2px rgba(31, 41, 55, 0.04), 0 12px 28px -18px rgba(22, 53, 48, 0.35);
+  padding: 2rem 1.75rem;
+  text-align: center;
+}
+
+.confirm-badge {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--teal);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  margin: 0 auto 1rem;
+}
+
+.confirm-card h1 {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 1.5rem;
+  color: var(--teal);
+  margin: 0 0 0.4rem;
+}
+
+.confirm-card p.lede {
+  color: var(--muted);
+  margin: 0 0 1.5rem;
+}
+
+.counter-pill {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.5rem 1.1rem;
+  margin-bottom: 1.75rem;
+}
+
+.counter-pill .num {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--amber-dark);
+}
+
+.counter-pill .label {
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.summary-table {
+  text-align: left;
+  border-top: 1px solid var(--line);
+  padding-top: 1.25rem;
+  margin-top: 0.25rem;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.55rem 0;
+  border-bottom: 1px dashed var(--line);
+  font-size: 0.92rem;
+}
+
+.summary-row:last-child {
+  border-bottom: none;
+}
+
+.summary-row dt {
+  color: var(--muted);
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.summary-row dd {
+  margin: 0;
+  text-align: right;
+  color: var(--ink);
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 1.75rem;
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: var(--teal);
+  text-decoration: none;
+  border-bottom: 1.5px solid var(--amber);
+  padding-bottom: 1px;
+}
+
+.back-link:hover {
+  color: var(--teal-dark);
+}
+
+/* ---------- Footer ---------- */
+footer.site-footer {
+  text-align: center;
+  font-size: 0.78rem;
+  color: var(--muted);
+  padding: 1.5rem 1rem 2rem;
+}
+
+footer.site-footer p {
+  margin: 0.2rem 0;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 480px) {
+  .checkbox-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .star-rating label {
+    font-size: 1.7rem;
+  }
+
+  form {
+    padding: 1.25rem 1.1rem 1.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}
