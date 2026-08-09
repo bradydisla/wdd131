@@ -1,0 +1,19 @@
+<svg viewBox="0 0 300 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Magnifying loupe examining a coin illustration">
+  <defs>
+    <radialGradient id="fieldExam" cx="35%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#f4f2ee"/>
+      <stop offset="55%" stop-color="#d8d6cf"/>
+      <stop offset="100%" stop-color="#b7b4a9"/>
+    </radialGradient>
+  </defs>
+  <circle cx="130" cy="120" r="95" fill="url(#fieldExam)" stroke="#8b8a7f" stroke-width="2"/>
+  <path d="M100 155 C90 138 88 116 98 98 C107 82 124 70 142 74 C158 78 166 92 162 106 C159 116 152 120 146 124 C150 134 158 142 166 148 C150 158 122 162 104 158 Z" fill="#9a9890" opacity="0.85"/>
+
+  <!-- loupe -->
+  <circle cx="205" cy="65" r="48" fill="none" stroke="#22403A" stroke-width="8"/>
+  <circle cx="205" cy="65" r="48" fill="#F3ECDC" opacity="0.18"/>
+  <line x1="238" y1="98" x2="278" y2="138" stroke="#22403A" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="188" cy="50" r="8" fill="#F3ECDC" opacity="0.5"/>
+
+  <text x="150" y="228" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="12" letter-spacing="2" fill="#4A453B">GRADE · MS-65</text>
+</svg>

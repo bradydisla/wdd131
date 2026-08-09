@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buy Coins — CoinBest Catalog</title>
+  <meta name="description" content="Browse CoinBest's graded catalog of Olympic and sports commemorative coins alongside historic pieces, and add favorites to your cart to request them.">
+  <meta name="author" content="Brady Disla">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script/project.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <div class="spot-ticker" data-spot-ticker aria-label="Simulated live metal spot prices"></div>
+
+  <header class="site-header">
+    <div class="nav-bar wrap">
+      <a class="brand" href="index.html">
+        <img src="images/logo-mark.svg" alt="" width="34" height="34">
+        CoinBest
+      </a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <ul class="nav-links" id="primary-nav" data-nav-links>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="catalog.html" aria-current="page">Buy</a></li>
+        <li><a href="sell.html">Sell</a></li>
+        <li><a href="about.html">Learn</a></li>
+      </ul>
+      <a class="cart-pill" href="catalog.html">Cart &middot; <span data-cart-count>0</span></a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="wrap">
+        <p class="eyebrow">Store catalog</p>
+        <h1>Buy graded coins</h1>
+        <p class="intro-copy">Every coin below has been independently graded and photographed before listing. Filter by category, then add anything you'd like to request to your cart — checkout is handled directly with our team.</p>
+
+        <div class="filter-bar" data-filter-bar role="group" aria-label="Filter catalog by category">
+          <button type="button" class="filter-btn" data-filter="all" aria-pressed="true">All coins</button>
+          <button type="button" class="filter-btn" data-filter="olimpica" aria-pressed="false">Olympic &amp; sport</button>
+          <button type="button" class="filter-btn" data-filter="historica" aria-pressed="false">Historic</button>
+        </div>
+
+        <p class="catalog-meta" data-catalog-meta aria-live="polite"></p>
+
+        <div class="card-grid" data-catalog-grid aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <div class="cart-strip" data-cart-strip aria-live="polite">
+    <span>Your cart is empty — add a coin to request it.</span>
+  </div>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <h4>CoinBest</h4>
+        <p style="max-width: 32ch; color: var(--parchment-dim);">A small coin shop and learning hub for buying, selling, and understanding historical coins.</p>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="catalog.html">Buy coins</a></li>
+          <li><a href="sell.html">Sell coins</a></li>
+          <li><a href="about.html">Grading guide</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Project</h4>
+        <ul>
+          <li><a href="references.html">References</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap footer-bottom">
+      <span>&copy;💲2026 CoinBest /BRADY DISLA/ WDD 131💲</span>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<svg viewBox="0 0 320 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Stack of collectible coins illustration">
+  <defs>
+    <linearGradient id="rimGold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E5C766"/>
+      <stop offset="100%" stop-color="#9c7c1e"/>
+    </linearGradient>
+    <linearGradient id="rimSilver" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#eceae2"/>
+      <stop offset="100%" stop-color="#a6a396"/>
+    </linearGradient>
+    <linearGradient id="rimCopper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d98a52"/>
+      <stop offset="100%" stop-color="#7c421c"/>
+    </linearGradient>
+  </defs>
+
+  <ellipse cx="160" cy="235" rx="120" ry="14" fill="#211E19" opacity="0.12"/>
+
+  <!-- base stack: copper coins -->
+  <g>
+    <ellipse cx="110" cy="205" rx="70" ry="16" fill="url(#rimCopper)" stroke="#5c3315" stroke-width="1.5"/>
+    <ellipse cx="110" cy="196" rx="70" ry="16" fill="url(#rimCopper)" stroke="#5c3315" stroke-width="1.5"/>
+    <ellipse cx="110" cy="187" rx="70" ry="16" fill="#c9713c" stroke="#5c3315" stroke-width="1.5"/>
+  </g>
+
+  <!-- middle stack: silver coins -->
+  <g>
+    <ellipse cx="180" cy="178" rx="62" ry="14" fill="url(#rimSilver)" stroke="#6d6852" stroke-width="1.5"/>
+    <ellipse cx="180" cy="168" rx="62" ry="14" fill="url(#rimSilver)" stroke="#6d6852" stroke-width="1.5"/>
+    <ellipse cx="180" cy="158" rx="62" ry="14" fill="url(#rimSilver)" stroke="#6d6852" stroke-width="1.5"/>
+    <ellipse cx="180" cy="148" rx="62" ry="14" fill="#d8d6cf" stroke="#6d6852" stroke-width="1.5"/>
+  </g>
+
+  <!-- top stack: gold coins, leaning -->
+  <g transform="rotate(-6 150 100)">
+    <ellipse cx="150" cy="128" rx="54" ry="13" fill="url(#rimGold)" stroke="#8a6a1f" stroke-width="1.5"/>
+    <ellipse cx="150" cy="116" rx="54" ry="13" fill="url(#rimGold)" stroke="#8a6a1f" stroke-width="1.5"/>
+    <ellipse cx="150" cy="104" rx="54" ry="13" fill="#f3d878" stroke="#8a6a1f" stroke-width="1.5"/>
+    <text x="150" y="109" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#7c5c1c">MS-65</text>
+  </g>
+</svg>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn to Grade Coins — CoinBest</title>
+  <meta name="description" content="A plain-language grading guide and short history of coinage for people who are new to coin collecting, from CoinBest.">
+  <meta name="author" content="Brady Disla">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script/project.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <div class="spot-ticker" data-spot-ticker aria-label="Simulated live metal spot prices"></div>
+
+  <header class="site-header">
+    <div class="nav-bar wrap">
+      <a class="brand" href="index.html">
+        <img src="images/logo-mark.svg" alt="" width="34" height="34">
+        CoinBest
+      </a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <ul class="nav-links" id="primary-nav" data-nav-links>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="catalog.html">Buy</a></li>
+        <li><a href="sell.html">Sell</a></li>
+        <li><a href="about.html" aria-current="page">Learn</a></li>
+      </ul>
+      <a class="cart-pill" href="catalog.html">Cart &middot; <span data-cart-count>0</span></a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="wrap two-col-feature">
+        <div>
+          <p class="eyebrow">Start here</p>
+          <h1>What "MS-65" actually means</h1>
+          <p class="intro-copy">Grading is just a shared vocabulary for describing wear and eye appeal, so a buyer in another state can trust a listing without holding the coin. CoinBest uses the same 70-point Sheldon scale that most US dealers and grading services use.</p>
+        </div>
+        <img src="images/grading-loupe.svg" alt="Illustration of a coin being examined under a magnifying loupe" width="300" height="240" loading="lazy" style="max-width: 300px; justify-self: center;">
+      </div>
+    </section>
+
+    <section class="section section-alt" aria-labelledby="grades-heading">
+      <div class="wrap">
+        <h2 id="grades-heading">The grading scale, plain-language</h2>
+        <div class="grade-table-wrap">
+          <table class="grade-table">
+            <thead>
+              <tr>
+                <th scope="col">Code</th>
+                <th scope="col">Name</th>
+                <th scope="col">What to look for</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="code">P-1 / FR-2</td>
+                <td>Poor / Fair</td>
+                <td>Barely identifiable; date or design may be worn away entirely.</td>
+              </tr>
+              <tr>
+                <td class="code">G-4</td>
+                <td>Good</td>
+                <td>Heavily worn; major design elements are flat but outlines are visible.</td>
+              </tr>
+              <tr>
+                <td class="code">VG-8</td>
+                <td>Very Good</td>
+                <td>Design is worn but complete; some detail remains in the deepest areas.</td>
+              </tr>
+              <tr>
+                <td class="code">F-12 &ndash; F-15</td>
+                <td>Fine</td>
+                <td>Moderate, even wear; major details are worn but clear.</td>
+              </tr>
+              <tr>
+                <td class="code">VF-20 &ndash; VF-35</td>
+                <td>Very Fine</td>
+                <td>Light wear on the highest points only; most fine detail is sharp.</td>
+              </tr>
+              <tr>
+                <td class="code">XF-40 &ndash; XF-45</td>
+                <td>Extremely Fine</td>
+                <td>Slight wear on the highest points; design is crisp overall.</td>
+              </tr>
+              <tr>
+                <td class="code">AU-50 &ndash; AU-58</td>
+                <td>About Uncirculated</td>
+                <td>Trace of wear visible only under close light; most original luster remains.</td>
+              </tr>
+              <tr>
+                <td class="code">MS-60 &ndash; MS-70</td>
+                <td>Mint State</td>
+                <td>No wear at all; grade within this range depends on strike, marks, and luster.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="history-heading">
+      <div class="wrap">
+        <h2 id="history-heading">A short history of coined money</h2>
+        <p class="intro-copy">Knowing roughly when a coin's design or minting method originated helps explain why some pieces are common and others are scarce.</p>
+        <ul class="timeline-list">
+          <li>
+            <span class="t-year">~600 BC</span>
+            <span>Electrum coins are struck in the kingdom of Lydia, in present-day western Turkey — widely considered the first true coinage.</span>
+          </li>
+          <li>
+            <span class="t-year">211 BC</span>
+            <span>Rome standardizes the silver denarius, which circulates across the empire for centuries and forms the backbone of most ancient coin collections today.</span>
+          </li>
+          <li>
+            <span class="t-year">1792</span>
+            <span>The United States Mint is established in Philadelphia, beginning a domestic coinage that collectors now organize by mint mark and design type.</span>
+          </li>
+          <li>
+            <span class="t-year">1878</span>
+            <span>The Morgan silver dollar begins production, becoming one of the most widely collected US coin series due to its long run and large surviving mintages.</span>
+          </li>
+          <li>
+            <span class="t-year">1986</span>
+            <span>The US Mint introduces the American Gold and Silver Eagle bullion program, giving collectors a way to hold precious metal in a recognized, tradeable coin.</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-dark" aria-labelledby="tips-heading">
+      <div class="wrap">
+        <h2 id="tips-heading">Before you buy or sell</h2>
+        <ul class="timeline-list">
+          <li>
+            <span class="t-year">Handle</span>
+            <span>Hold coins by the edge, over a soft surface, to avoid adding fingerprints or scratches that lower the grade.</span>
+          </li>
+          <li>
+            <span class="t-year">Compare</span>
+            <span>Check a coin's price against recent sales of the same date, mint mark, and grade — not just the same coin type.</span>
+          </li>
+          <li>
+            <span class="t-year">Ask</span>
+            <span>A seller should always be able to explain why a coin is graded the way it is. If they can't, ask for more photos before you commit.</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <h4>CoinBest</h4>
+        <p style="max-width: 32ch; color: var(--parchment-dim);">A small coin shop and learning hub for buying, selling, and understanding historical coins.</p>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="catalog.html">Buy coins</a></li>
+          <li><a href="sell.html">Sell coins</a></li>
+          <li><a href="about.html">Grading guide</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Project</h4>
+        <ul>
+          <li><a href="references.html">References</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap footer-bottom">
+      <span>&copy;💲2026 CoinBest /BRADY DISLA/ WDD 131💲</span>
+    </div>
+  </footer>
+</body>
+</html>
