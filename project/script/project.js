@@ -11,13 +11,13 @@
 const catalog = [
   { id: "ol-atle", name: "Olympic Commemorative — Athletics", country: "Brasil", year: 1980, category: "olimpica", grade: "MS-63", price: 45, stock: 5, image: "images/coin-atle.jpg" },
   { id: "ol-basket", name: "Olympic Commemorative — Basketball", country: "Brasil", year: 1980, category: "olimpica", grade: "MS-64", price: 42, stock: 4, image: "images/coin-basket.jpg" },
-  { id: "ol-cuba", name: "Coin-National Emblem", country: "Cuba", year: 1980, category: "historica", grade: "MS-65", price: 50, stock: 3, image: "images/coin-cuba.jpg" },
+  { id: "ol-cuba", name: "Coin-National Emblem", country: "Cuba", year: 1980, category: "historica", grade: "MS-65", price: 50, stock: 4, image: "images/coin-cuba.jpg" },
   { id: "ol-flag", name: "Olympic Commemorative — Flag", country: "Brasil", year: 1980, category: "olimpica", grade: "MS-62", price: 38, stock: 6, image: "images/coin-flag.jpg" },
   { id: "ol-fut", name: "Olympic Commemorative — Football", country: "Brasil", year: 1980, category: "olimpica", grade: "MS-63", price: 44, stock: 4, image: "images/coin-fut.jpg" },
   { id: "ol-golf", name: "Olympic Commemorative — Golf", country: "Cuba", year: 1980, category: "olimpica", grade: "AU-58", price: 40, stock: 5, image: "images/coin-golf.jpg" },
   { id: "ol-mex", name: "Mexico-68 Commemorative", country: "Mexico", year: 1968, category: "historica", grade: "AU-55", price: 60, stock: 3, image: "images/coin-mex.jpg" },
   { id: "ol-para", name: "Olympic Commemorative — Paralympics", country: "Brasil", year: 1980, category: "olimpica", grade: "MS-64", price: 46, stock: 2, image: "images/coin-para.jpg" },
-  { id: "ol-rugby", name: "Olympic Commemorative — Rugby", country: "Brasil", year: 1980, category: "olimpica", grade: "MS-63", price: 43, stock: 3, image: "images/coin-rugby.jpg" },
+  { id: "ol-rugby", name: "Olympic Commemorative — Rugby", country: "Brasil", year: 1980, category: "olimpica", grade: "MS-63", price: 43, stock: 6, image: "images/coin-rugby.jpg" },
   { id: "ol-volley", name: "Olympic Commemorative — Volleyball", country: "Brasil", year: 1980, category: "olimpica", grade: "MS-65", price: 48, stock: 4, image: "images/coin-volley.jpg" },
   { id: "hi-1877dr", name: "DR Commemorative Coin, 1877", country: "Dominican Republic", year: 1877, category: "historica", grade: "VF-30", price: 130, stock: 2, image: "images/coin-1877dr.jpg" },
   { id: "hi-1937dr", name: "Silver Coin, 1937", country: "Dominican Republic", year: 1937, category: "historica", grade: "XF-40", price: 95, stock: 3, image: "images/coin-1937dr.jpg" },
@@ -26,7 +26,7 @@ const catalog = [
 /* Rare/featured picks shown on the Home page — an array method (filter)
    selecting a subset of the catalog rather than duplicating data. */
 function getFeaturedCoins() {
-  return catalog.filter((coin) => coin.stock <= 3).slice(0, 3);
+  return catalog.filter((coin) => coin.stock <= 3).slice(0,3);
 }
 
 function formatCurrency(amount) {
